@@ -88,7 +88,7 @@ public class MyTablutPlayerClient extends TablutClient{
 					history.add(current.boardString());
 					Action action = null;
 					try {
-						action = aiLogic.findBestMove(current, timeoutSeconds, -1, history);
+						action = aiLogic.findBestMove(current, -1, timeoutSeconds, history);
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
